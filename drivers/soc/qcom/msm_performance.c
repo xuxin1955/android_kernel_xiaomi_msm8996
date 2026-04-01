@@ -458,14 +458,13 @@ module_param_cb(cpu_min_freq, &param_ops_cpu_min_freq, NULL, 0644);
  */
 static int set_cpu_max_freq(const char *buf, const struct kernel_param *kp)
 {
-/*	int i, j, ntokens = 0;
+	int i, j, ntokens = 0;
 	unsigned int val, cpu;
 	const char *cp = buf;
 	struct cpu_status *i_cpu_stats;
 	struct cpufreq_policy policy;
 	cpumask_var_t limit_mask;
 	int ret;
-*/  return 0; 
     
 	while ((cp = strpbrk(cp + 1, " :")))
 		ntokens++;
